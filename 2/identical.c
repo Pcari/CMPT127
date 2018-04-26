@@ -32,7 +32,6 @@ if (identical(a4, b4, 3) == 1) {
 */
 
 int identical(int a[], int b[], unsigned int len) {
-
 	if (len == 0) {
 		return 1;
 	}

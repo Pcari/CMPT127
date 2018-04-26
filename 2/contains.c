@@ -22,8 +22,6 @@ for (int i =0; i <len1; i++) {
 	printf("%d\n", len1);
 	printf("%d\n", len2);
 */
-
-
 	if (argc < 3) {
 		printf("false\n");
 	}
@@ -33,16 +31,11 @@ for (int i =0; i <len1; i++) {
 		printf("false\n");
 	}
 
-int i = 0;
-int j = 0;
-
-
-
-
+	int i = 0;
+	int j = 0;
 
 	while (len1 >= len2 && j != len2 && argc >= 3 && i != len1) {
 		for (i = 0, j = 0; i < len1; i++) {
-
 			
 			if (argv[1][i] == argv[2][j] && j != len2) {
 				

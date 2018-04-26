@@ -9,10 +9,7 @@ int main(int argc, char* argv[]) {
 
 	char word[128] = { 0 };
 	int censor = 0;
-	int censorWord = 0;
 	int i = 0;
-	
-	int input = 0;
 
 /*
 	printf("argv[1]: %s\n", argv[1]);
@@ -22,9 +19,6 @@ int main(int argc, char* argv[]) {
 	//printf("%d\n", len1);
 	//printf("%d\n", len2);
 
-	
-
-	
 	char c = getchar();
 	while (c!= EOF) {
 
@@ -32,19 +26,17 @@ int main(int argc, char* argv[]) {
 		word[i] = c;
 		//word[i];
 		i++;
-		input++;
 		}
 		else {
 			censor = 0;
-			for (int j = 0; j < argc; j++){
-				if (strcmp(argv[j], word) == 0)
+			for (int j = 0; j < argc; j++) {
+				if (strcmp(argv[j], word) == 0) {
 					// 0 means equal if < 0, str1 < str2  if >0, str1 > str2
-				{
+				
 					censor = 1;
 					printf("CENSORED");
 				}
 			}
-
 			if (censor == 0) {
 				printf("%s", word);
 				
@@ -54,16 +46,9 @@ int main(int argc, char* argv[]) {
 			}
 			i = 0;
 			memset(word, 0, sizeof(word));
-
 		}	
-	
-
-	 c = getchar();	
+		c = getchar();	
 	}
-	
-
-			
-
 	return 0;
 }
 

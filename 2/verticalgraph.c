@@ -12,19 +12,12 @@ int row = 0;
 int col = 0;
 int max = 0;
 
-
 	while(scanf("%d", &input) == 1) {
 		arr[i] = input;
 		numInputs++;
 		i++;
 	}
-
-
-
-
 //printf("\n");
-
-
 	for (int j = 0; j < numInputs; j++) {
 		
 		if (arr[j] > max) {
@@ -32,9 +25,7 @@ int max = 0;
 		}
 	//	printf("max: %d \n", max);
 	}
-	
 	row = max;
-
 	for (int j = row; j > 0; j--) {
 		for (int k =0; k < numInputs; k++) {
 			if (arr[k] < j) {

@@ -30,13 +30,8 @@ int main(int argc, char* argv[]) {
 			printf("%c %.4f\n", 'a'+i, letters[i]/count);
 		}
 	}
-
-
-
 	return 0;
 }
-
-
 
 bool isAlphabet(char c) {
 	return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
