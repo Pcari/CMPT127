@@ -16,23 +16,14 @@ int main(void) {
 	//printf("Enter:");
 	//scanf("%f", &f);
 
-	if (scanf("%f", &f) != 1)
-	{
+	if (scanf("%f", &f) != 1) {
 		printf("scanf error: (%d)\n");
-	}
-	else
-	{
-
-	floor = floorf(f);
-	round = roundf(f);
-	ceil = ceilf(f);
-
-
-	printf("%d %d %d\n", floor, round, ceil);
+		} else {
+		floor = floorf(f);
+		round = roundf(f);
+		ceil = ceilf(f);
+		printf("%d %d %d\n", floor, round, ceil);
 
 	}
-
-
-
 	return 0;
 }

@@ -4,16 +4,12 @@
 float roundf(float x);
 
 int main() {
-
 	float f;
 	float smallest;
 	float largest;
 	float total;
 	int numInputs = 1;
 
-//	printf("Enter: \n");
-
-// && (scanf("%f", &f) >= -100000 && scanf("%f", &f) <= 100000)
 	if (scanf("%f", &f) == 1) {
 		smallest = largest = total = f;
 	}
